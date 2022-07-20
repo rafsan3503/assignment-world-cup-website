@@ -1,0 +1,426 @@
+/* ----common style-----  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* button */
+.primary-btn{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    background-color: #DD0000;
+    border-radius: 5px;
+    padding: 16px 25px;
+    animation: sidemove 2s linear 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+/* button animation */
+@keyframes sidemove {
+    0%{
+        transform: translateX(-150px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0px);
+        visibility: visible;
+    }
+}
+
+/* -----------------Header starts here------------  */
+
+#header{
+    width: 100%;
+}
+
+/* top banner starts here */
+
+.top-banner{
+    width: 95%;
+    height: 100%;
+    margin: 50px auto;
+    background-color:#151919;
+    border-radius: 30px;
+    display: flex;
+
+    
+}
+
+.top-banner-text{
+    width: 50%;
+    padding: 15% 0 5% 5%;
+    animation: sidemove 2s linear 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.top-banner-text h1{
+    font-size: 4em;
+    color: white;
+}
+
+.top-banner-text p{
+    color: white;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.top-banner-img{
+    width: 50%;
+    padding-top: 5%;
+    animation: zoomin 2s linear 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+/* image animation  */
+@keyframes zoomin {
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100% {
+        transform: scale(1.0);
+        visibility: visible;
+    }
+}
+
+.top-banner-img img{
+    width: 100%;
+   height: 100%;
+}
+
+/* top banner ends here */
+
+/* -----------------Header end here------------  */
+
+/* ---------main section starts here ------------ */
+
+main{
+    width: 100%;
+}
+
+/* blog container starts here */
+.blogs-container{
+    width: 95%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* sidebar starts */
+.blogs-container aside{
+    width: 20%;
+    height: 20rem;
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav-link{
+    background-color: white;
+    width: 90%;
+    height: 4rem;
+    margin: 0 auto;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: black;
+}
+
+#highlights{
+    background-color: #DD0000;
+}
+
+/* sidebar ends */
+
+/* article starts here  */
+
+article{
+    width: 78%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24PX;
+}
+.blog-card{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+
+.blog-card img{
+    width: 100%;
+}
+
+.blog-card-details{
+    padding: 20px;
+}
+.blog-title{
+    border: 1px solid #161616;
+    display: inline-block;
+    padding: 4px;
+}
+
+.blog-head{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0 20px 0;
+}
+
+span{
+    margin-right: 30px;
+}
+
+/* article ends here  */
+
+/* tablet button starts */
+
+.tablet-hidden-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    display: none;
+}
+
+/* tablet button end */
+
+/* ---------main section end here ------------ */
+
+
+/* ---------Footer section start here ------------ */
+
+footer{
+    width: 100%;
+    height: 28rem;
+    background-color: #161616;
+    text-align: center;
+    color: white;
+    padding-top: 15%;
+}
+footer h2{
+    margin-bottom: 50px;
+}
+.footer-nav ul{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid gray;
+}
+
+.footer-nav ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+.social-link a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+}
+
+
+
+/* ---------Footer section end here ------------ */
+
+/* upcoming section start */
+
+.upcoming-match {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.upcoming-match .flag {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.match-details {
+    padding-top: 30px;
+}
+
+/* upcoming section end  */
+
+/* all group section start */
+.group-card .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+    border-radius: 10px;
+}
+
+.group-card table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    font-size: 1.3em;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.group-card table th,
+td {
+    padding: 10px 12px;
+}
+
+/* all group section end  */
+
+/* -----------------------
+        Media Query
+--------------------------- */
+
+/* media query for mobile */
+@media screen and (max-width:476px) {
+    /* top banner for mobile  */
+    .top-banner {
+        flex-direction: column;
+    }
+    .top-banner-text {
+        width: 100%;
+        text-align: center;
+    }
+    .top-banner-text h1 {
+        font-size: 52px;
+    }
+    .top-banner-text p {
+        height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .top-banner-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* blogs-container for mobile  */
+    .blogs-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* sidebar for mobile  */
+    .blogs-container aside {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 300px;
+        background: none;
+        margin-bottom: 30px;
+    }
+    /* article for mobile  */
+    .blogs-container article {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    /* all group section for mobile  */
+    .group-card .group {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* tablet hidden button  */
+    .tablet-hidden-button {
+        display: none;
+    }
+    /* footer section  */
+    footer{
+        height: 100%;
+    }
+    .footer-nav ul{
+        flex-direction: column;
+    }
+}
+
+/* media query for tablet */
+
+@media screen and (min-width:477px) and (max-width:768px) {
+
+    /* top banner for tablet */
+    .top-banner-text{
+        width: 50%;
+    }
+    .top-banner-text p {
+        height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .top-banner-img {
+        width: 50%;
+    }
+
+    .top-banner-img img {
+        width: 100%;
+    }
+/* blogs container for tablet  */
+    .blogs-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+/* sidebar for tablet  */
+    .blogs-container aside {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        background: none;
+    }
+
+    .nav-link {
+        margin: 0 20px;
+    }
+/* article for tablet  */
+    .blogs-container article {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+/* all group card for mobile  */
+    .group-card .group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+/* tablet hidden button  */
+    .tablet-hidden-button {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+/* ---------------------
+
+Media Query ends here
+
+--------------------  */
+
+/* ----------Thank You for watching my code --------- */
